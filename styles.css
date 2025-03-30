@@ -12,6 +12,8 @@ header {
 
 .hero {
     padding: 20px;
+    background-color: #FFA500; /* Light Bhagwa (Saffron) */
+    border-radius: 10px; /* Thoda rounded look */
 }
 
 .hero img {
