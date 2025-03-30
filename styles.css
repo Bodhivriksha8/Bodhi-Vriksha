@@ -7,40 +7,51 @@ body {
 }
 
 header {
-    background-color: #4169E1; /* Royal Blue */
+    background-color: #4169E1;
     padding: 20px;
-    color: white; /* White text */
-}
-
-.hero {
-    padding: 20px;
-    background-color: #FFA500 !important; /* Force apply saffron color */
-    border-radius: 10px;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-.hero img {
-    border-radius: 10px;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.hero blockquote {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #333;
-}
-
-.about {
-    padding: 20px;
-    background-color: white;
-    margin: 20px;
-    border-radius: 10px;
-}
-
-footer {
-    background-color: #1a1a1a;
     color: white;
+    position: relative;
+}
+
+.menu-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.side-menu {
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100%;
+    background: white;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease-in-out;
+    padding-top: 50px;
+}
+
+.side-menu ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.side-menu li {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.side-menu li a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    display: block;
+}
+
+.side-menu li:last-child {
     text-align: center;
-    padding: 10px;
+    background: #f4f4f4;
 }
