@@ -6,10 +6,9 @@ body {
     background-color: #f4f4f4;
 }
 
-
 header h1 {
-    color: white; /* Ya jo bhi pehle ka color tha */
-
+    color: inherit; /* Ya jo bhi pehle ka color tha */
+}
 
 .hero {
     padding: 20px;
