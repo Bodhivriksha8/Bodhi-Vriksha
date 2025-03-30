@@ -17,8 +17,8 @@
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
-                    <li>Contact
-                        <span>:bodhivriksha94@gmail.com</span></li>
+                    <li><a href="#" onclick="toggleEmail()">Contact</a></li>
+<li id="email" style="display: none;">bodhivriksha94@gmail.com</li>
                     <li><a href="https://youtube.com/@bodhivrikshaindia?si=C0e7kbZ-HUAqgZMh" target="_blank">YouTube</a></li>
                     <li><a href="#" onclick="toggleMenu()">Close ✖</a></li>
                 </ul>
@@ -50,5 +50,15 @@
             }
         }
     </script>
+    <script>
+    function toggleEmail() {
+        var emailElement = document.getElementById("email");
+        if (emailElement.style.display === "none") {
+            emailElement.style.display = "block";
+        } else {
+            emailElement.style.display = "none";
+        }
+    }
+</script>
 </body>
 </html>
