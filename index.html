@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,13 +11,16 @@
     <header>
         <h1>Bodhi Vriksha</h1>
         <p>Spread the Light of Knowledge</p>
-        <div class="menu">
+        <div class="menu-container">
             <span class="dots" onclick="toggleMenu()">⋮</span>
-            <ul class="menu-options" id="menuOptions">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+            <div class="side-menu" id="sideMenu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#" onclick="toggleMenu()">Close ✖</a></li>
+                </ul>
+            </div>
         </div>
     </header>
 
@@ -36,11 +40,11 @@
 
     <script>
         function toggleMenu() {
-            var menu = document.getElementById("menuOptions");
-            if (menu.style.display === "block") {
-                menu.style.display = "none";
+            var menu = document.getElementById("sideMenu");
+            if (menu.style.right === "0px") {
+                menu.style.right = "-200px";
             } else {
-                menu.style.display = "block";
+                menu.style.right = "0px";
             }
         }
     </script>
