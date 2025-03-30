@@ -38,4 +38,6 @@ footer {
     background-color: #333;
     color: white;
     padding: 10px;
+}header h1 {
+    color: royalblue; /* Yeh heading ko Royal Blue bana dega */
 }
