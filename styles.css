@@ -14,7 +14,7 @@ header {
 
 .hero {
     padding: 20px;
-    background-color: #FFA500; /* Light Bhagwa (Saffron) */
+    background-color: #FFA500 !important; /* Force apply saffron color */
     border-radius: 10px;
     width: 100%;
     box-sizing: border-box;
