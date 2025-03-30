@@ -8,8 +8,8 @@ body {
 
 
 }header h1 {
-    color: royalblue;
-    text-shadow: 2px 2px 5px rgba(0, 0, 255, 0.3)
+    color: white; /* Ya jo bhi pehle ka color tha */
+}
 }
 
 .hero {
